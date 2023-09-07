@@ -2,7 +2,7 @@ package oop0906;
 
 public class Test06_quiz {
 
-	public static double sd(int[] aver) {
+	/*public static double sd(int[] aver) {
 		double pg = 0; //평균
 		double ave = 0; //표준편차
 		for(int i=0;i<aver.length;i++) {
@@ -13,7 +13,7 @@ public class Test06_quiz {
 		}
 		
 		return ave;
-	}// sd() end
+	}// sd() end*/
 	
 	
 	public static double sd(int[] aver) {
