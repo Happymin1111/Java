@@ -1,6 +1,8 @@
 package oop0914;
 
+import java.util.ArrayList;
 import java.util.Enumeration;
+import java.util.List;
 import java.util.Vector;
 
 public class Test01_List {
@@ -46,6 +48,7 @@ public class Test01_List {
       //Enumeration
       
       //1.List 계열
+      
       //제네릭 <E> Element 요소
       Vector vec = new Vector();
       vec.add(3);
@@ -57,6 +60,41 @@ public class Test01_List {
       
       //Integer inte=new Integer(5) Old Version
       //Integer inte=5              New Version
+      
+      System.out.println(vec.size()); // 6 요소의 갯수
+      
+      for(int i=0; i<vec.size(); i++) {
+    	  System.out.println(vec.get(i));
+      }// for end
+      
+      vec.remove(0);                     //0번째 요소 제거하기
+      System.out.println(vec.size());    //5
+      
+      vec.removeAllElements(); 			 //vec요소 전부 제거하기
+      System.out.println(vec.size());    //0
+      
+      if(vec.isEmpty()) {
+    	  System.out.println("비어 있다.");
+      }else {
+    	  System.out.println("비어 있지 않다.");
+      }//if end
+      //////////////////////////////////////////////////////////////////
+      
+      //다형성
+      List list = new ArrayList();
+      list.add(5);
+      list.add(6.7);
+      list.add('M');
+      list.add("SEOUL");
+      
+      System.out.println(list.size()); //4
+      
+      //문) remove() 이용해서 list 요소를 전부 삭제하시오
+      for(int i=list.size()-1; i>=0; i--) {
+    	  list.remove(i);
+      }//for end
+      
+      System.out.println(list.size());
       
       
       
